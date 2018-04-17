@@ -15,13 +15,13 @@ public class StudentsWorker {
         return student;
     }
 
-    public Student getLectre(int id) {
+    public Student getStudent(int id) {
         Student s = studentsDao.getStudent(id);
         System.out.println(s);
         return s;
     }
 
-    public void saveLecture(Student student) {
+    public void saveStudent(Student student) {
         System.out.println(student);
         studentsDao.saveStudent(student);
     }
